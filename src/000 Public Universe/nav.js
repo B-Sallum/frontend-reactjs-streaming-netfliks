@@ -1,15 +1,16 @@
 import './nav.css';
 
 const PublicNav = () => (
-  <div className="nav">
+  <div className='nav'>
+    <form className='nav_searchbox'>
+        <input type='text' placeholder='Search Movies...' required />
+        <input type='submit' value='search' />
+    </form>
     <div>
-      <h1>nedfligs</h1>
-    </div>
-    <div>
-      <button id="login">
+      <button className='nav_buttons'>
         <h3>Login</h3>
       </button>
-      <button id='signup'>
+      <button className='nav_buttons'>
         <h3>Sign Up</h3>
       </button>
     </div>
